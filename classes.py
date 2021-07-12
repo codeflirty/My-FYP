@@ -173,6 +173,7 @@ class BidirectionalGRU(nn.Module):
         return x
 
 class SpeechRecognitionModel(nn.Module):
+    print('==========================================================================================')
     import torch
     import os
     import pandas as pd
