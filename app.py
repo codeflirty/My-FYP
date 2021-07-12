@@ -1,8 +1,5 @@
 # import libraries
 from flask import Flask, request, jsonify, render_template
-
-app = Flask(__name__)
-
 import speech_recognition as sr
 import torch
 import os
@@ -24,6 +21,9 @@ from classes import IterMeter
 
 warnings.filterwarnings("ignore")
 warnings.simplefilter("ignore", UserWarning)
+
+
+app = Flask(__name__)
 
 UPLOAD_FOLDER = 'static'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
