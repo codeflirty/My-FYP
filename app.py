@@ -16,7 +16,7 @@ from classes import CNNLayerNorm
 from classes import ResidualCNN
 from classes import BidirectionalGRU
 from classes import SpeechRecognitionModel
-print(SpeechRecognitionModel)
+print("1---------------------------",SpeechRecognitionModel)
 from classes import IterMeter
 
 warnings.filterwarnings("ignore")
@@ -37,7 +37,7 @@ train_audio_transforms = nn.Sequential(
 valid_audio_transforms = torchaudio.transforms.MelSpectrogram()
 text_transform = TextTransform()
 
-print(SpeechRecognitionModel)
+print("2---------------------------",SpeechRecognitionModel)
 
 # Specify a path
 PATH = "Trained_Model.pt"
