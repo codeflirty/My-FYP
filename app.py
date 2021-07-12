@@ -35,9 +35,6 @@ train_audio_transforms = nn.Sequential(
 valid_audio_transforms = torchaudio.transforms.MelSpectrogram()
 text_transform = TextTransform()
 
-print("=========================================================================================")
-
-
 def __init__(self, n_cnn_layers, n_rnn_layers, rnn_dim, n_class, n_feats, stride=2, dropout=0.1):
     print('dfghjkl;lkjhgffghjkl;lkjhgffghjkl')
     super(SpeechRecognitionModel, self).__init__()
